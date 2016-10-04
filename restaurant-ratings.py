@@ -13,13 +13,13 @@ def format_restaurant_scores(file_name):
         
         restaurants = words[0]
         scores = words[1]    
-        
-        for each_line in words:
-            scores_for_restaurants[restaurants] = scores
+        scores_for_restaurants[restaurants] = scores
 
-        # final_scores = scores_for_restaurants.items()
-            
-            
-    print scores_for_restaurants
+     
+    for restaurants, scores in scores_for_restaurants.items():
+        print "%s is rated at %s" % (restaurants, scores)
 
-format_restaurant_scores(scores_doc)    
+format_restaurant_scores(scores_doc)
+
+
+ 
