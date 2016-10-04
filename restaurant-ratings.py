@@ -16,7 +16,7 @@ def format_restaurant_scores(file_name):
         scores_for_restaurants[restaurants] = scores
 
      
-    for restaurants, scores in scores_for_restaurants.items():
+    for restaurants, scores in sorted(scores_for_restaurants.items()):
         print "%s is rated at %s" % (restaurants, scores)
 
 format_restaurant_scores(scores_doc)
